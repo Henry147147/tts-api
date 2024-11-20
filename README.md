@@ -8,4 +8,4 @@ The endpoints are as follows:
 
 `GET "/languages"` -> returns the avaialable languages that can be used for TTS generation.
 
-`POST "/text-to-speech"` body=`{text: data to read back, voice: the voice to use, rate: the speech rate, pitch: the pitch the speecher is altered}`
+`POST "/text-to-speech"` body=`{text: data to read back, voice: the voice to use, rate: the speech rate, pitch: the pitch the speecher is altered}` -> returns the generated mp3 data from the TTS models.
