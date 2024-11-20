@@ -1,0 +1,14 @@
+[Unit]
+Description=FastAPI Service
+After=network.target
+
+[Service]
+User=henry
+Group=henry
+WorkingDirectory=/home/henry/server
+ExecStart=/bin/bash /home/henry/server/start.sh
+Restart=always
+Environment="PATH=/home/henry/miniconda3/bin"
+
+[Install]
+WantedBy=multi-user.target
